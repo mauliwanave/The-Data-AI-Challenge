@@ -2,7 +2,7 @@
 # ============================================================================
 # Team identity
 # ============================================================================
-team_name: "Mini-Polling-Website"
+team_name: "The-Data-AI-Challenge"
 
 primary_contact:
   name: "Mauli Wanave"
@@ -17,7 +17,7 @@ team_members:
 # ============================================================================
 # Code and reproducibility
 # ============================================================================
-github_repo: "https://github.com/mauliwanave/Mini-Polling-Website"
+github_repo: "https://github.com/mauliwanave/The-Data-AI-Challenge"
 sandbox_link: "https://huggingface.co/spaces/mauliwanave/redrob-ranker"
 reproduce_command: "python rank.py --candidates ./dataset/candidates.jsonl --out ./team_minipolling.csv"
 
