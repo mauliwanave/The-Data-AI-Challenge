@@ -1,0 +1,2 @@
+# No external packages are required for the ranking pipeline.
+# The ranking script runs entirely using the Python Standard Library (json, csv, argparse, datetime).

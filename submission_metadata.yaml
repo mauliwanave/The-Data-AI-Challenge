@@ -1,0 +1,59 @@
+# Redrob Hackathon — Submission Metadata
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "Mini-Polling-Website"
+
+primary_contact:
+  name: "Mauli Wanave"
+  email: "mauliwanave@example.com"
+  phone: "+91-XXXXXXXXXX"
+
+team_members:
+  - name: "Mauli Wanave"
+    email: "mauliwanave@example.com"
+    role: "ML Engineer"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/mauliwanave/Mini-Polling-Website"
+sandbox_link: "https://huggingface.co/spaces/mauliwanave/redrob-ranker"
+reproduce_command: "python rank.py --candidates ./dataset/candidates.jsonl --out ./team_minipolling.csv"
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Local Windows PC"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11.4"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Gemini"
+  - "Claude"
+
+ai_usage_summary: |
+  Used Gemini 3.5 Flash via Antigravity agentic framework to design the scoring logic, construct honeypot filtering rules, and generate factual candidate reasoning. No candidate data was sent to external APIs during ranking.
+
+methodology_summary: |
+  Deterministic scoring and filtering system. Honeypot detection filters out candidates with impossible profile dates/durations and fake skills. Evaluates remaining candidates based on years of experience, current title alignment, consulting firm penalties, vector DB and NLP technical skills, and notice period/activity multipliers. Runs in 10-15 seconds on a single CPU core.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true

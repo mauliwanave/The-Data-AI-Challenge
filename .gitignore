@@ -1,0 +1,13 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large dataset files
+dataset/candidates.jsonl
+dataset/*.zip
+dataset/*.docx
+dataset/detected_honeypots.txt
+
+# Generated output files
+team_minipolling.csv
